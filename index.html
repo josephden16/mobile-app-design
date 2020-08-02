@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/df01a0de14.js" crossorigin="anonymous"></script>
+    <title>First Mobile App Design</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="hamburger">
+                <span style="color:#1e5a9c; font-size: 32px;">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+            <div class="logo"><img src="./img/Logo.svg" style="fill: #1e5a9c" alt="app logo" class="site-logo"></div>
+            <div class="ellipsis">
+                <span style="font-size: 30px; color: #1e5a9c;">
+                    <i class="fas fa-ellipsis-v"></i>
+                </span>
+            </div>
+        </div>
+        <div class="tabs">
+            <div class="location">
+                <span style="color: white; font-size: 35px;">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
+            </div>
+            <div class="check">
+                <span style="font-size: 35px; color: #8BCDFF;">
+                    <i class="fas fa-check-circle"></i>
+                </span>
+            </div>
+            <div class="search">
+                <span style="font-size: 35px; color: #8BCDFF;">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="tags">
+            <div class="tag">Tagone <span style="font-size: 12px; color: #1e5a9c;"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="tag">Tagtwo <span style="font-size: 12px; color: #1e5a9c;"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="tag">Tagthree <span style="font-size: 12px; color: #1e5a9c;"><i class="fas fa-times"></i></span>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="info">
+                    <span style="right: 18px; font-size: 30px; position: absolute; color: #645D72">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <div class="profile">
+                        <img src="./img/Avatar 1.jpg" alt="avatar 1">
+                    </div>
+                    <div class="lead">Space for a longer title display</div>
+                    <div class="faded-text">Space for some sub copy to display here</div>
+                    <div class="price">
+                        $999 <sub>/ month</sub>
+                    </div>
+                </div>
+                <div class="img">
+                    <img id="imgOne" src="img/Photo 1.jpg" alt="photo 1">
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <span style="right: 18px; font-size: 30px; position: absolute; color: #fff">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <div class="profile">
+                        <img src="./img/Avatar 2.jpg" alt="avatar 1">
+                    </div>
+                    <div class="lead">Space for a longer title display</div>
+                    <div class="faded-text">Space for some sub copy to display here</div>
+                    <div class="price">
+                        $999 <sub>/ month</sub>
+                    </div>
+                </div>
+                <div class="img">
+                    <img id="imgTwo" src="img/Photo 2.jpg" alt="photo 1">
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <span style="right: 18px; font-size: 30px; position: absolute; color: #645D72">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                    <div class="profile">
+                        <img src="./img/Avatar 3.jpg" alt="avatar 1">
+                    </div>
+                    <div class="lead">Space for a longer title display</div>
+                    <div class="faded-text">Space for some sub copy to display here</div>
+                    <div class="price">
+                        $999 <sub>/ month</sub>
+                    </div>
+                </div>
+                <div class="img">
+                    <img id="imgThree" src="img/Photo 3.jpeg" alt="photo 1">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal">
+        <span style="left: 22px; top: 28px; font-size: 40px; position: absolute; color: #fff;">
+            <i class="fas fa-times" id="close"></i>
+        </span>
+        <img src="img/Photo 1.jpg" alt="image 1" id="modalimg">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+@import "config";
+
+header {
+    background-color: $secondaryColor;
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    background-color: $secondaryColor;
+    justify-content: space-between;
+    padding: 12px;
+    padding-top: 25px;
+}
+.tabs {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 12px 0;
+    .location {
+        border-bottom: 9px solid white;
+        text-align: center;
+    }
+    .search {
+        border-bottom: 9px solid #8bcdff;
+        text-align: center;
+    }
+
+    .check {
+        border-bottom: 9px solid #8bcdff;
+        text-align: center;
+    }
+    .check,
+    .search,
+    .location {
+        padding-bottom: 8px;
+    }
+}
+.site-logo {
+    width: 55px;
+}
+
+.ellipsis {
+    width: 28px;
+}
+
+main {
+    margin: 20px 10px;
+}
+
+.tags {
+    display: flex;
+    flex-flow: row nowrap;
+    .tag {
+        background-color: $secondaryColor;
+        padding: 8px;
+        width: auto;
+        margin: 5px;
+        color: white;
+        border-radius: 8px;
+        font-weight: bolder;
+        span {
+            padding: 2px;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 25px;
+    .card {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        background-color: #fff;
+        margin: 15px 0;
+        box-shadow: -2px 6px 8px 0px rgba(0, 0, 0, 0.018), -2px 8px 8px 0px rgba(0, 0, 0, 0.018),
+            6px -2px 6px 0px rgba(0, 0, 0, 0.018), 2px -6px 5px 0px rgba(0, 0, 0, 0.018),
+            6px 4px 8px 0px rgba(0, 0, 0, 0.018), 2px 2px 2px 0px rgba(0, 0, 0, 0.018);
+        .info {
+            padding: 12px 20px;
+            .profile {
+                img {
+                    width: 50px;
+                    border-radius: 50%;
+                }
+            }
+
+            .lead {
+                font-size: 13px;
+                font-weight: 700;
+                margin: 12px 0;
+            }
+
+            .faded-text {
+                font-size: 13px;
+                font-weight: lighter;
+                color: #999999;
+                margin: 12px 0;
+            }
+
+            .price {
+                font-weight: bolder;
+                font-size: 19px;
+                sub {
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .img {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    img {
+        width: 100%;
+        height: 100vh;
+        animation-name: img;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in-out;
+    }
+}
+.open {
+    display: block;
+}
+
+@keyframes img {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 527px) {
+    .cards {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 25px;
+        .card {
+            display: grid;
+            grid-template-columns: 45% 55%;
+            background-color: #fff;
+            margin: 15px 0;
+            box-shadow: -2px 6px 8px 0px rgba(0, 0, 0, 0.018), -2px 8px 8px 0px rgba(0, 0, 0, 0.018),
+                6px -2px 6px 0px rgba(0, 0, 0, 0.018), 2px -6px 5px 0px rgba(0, 0, 0, 0.018),
+                6px 4px 8px 0px rgba(0, 0, 0, 0.018), 2px 2px 2px 0px rgba(0, 0, 0, 0.018);
+            .info {
+                padding: 12px 20px;
+                .profile {
+                    img {
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .lead {
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin: 12px 0;
+                }
+
+                .faded-text {
+                    font-size: 16px;
+                    font-weight: lighter;
+                    color: #999999;
+                    margin: 12px 0;
+                }
+
+                .price {
+                    font-weight: bolder;
+                    font-size: 22px;
+                    sub {
+                        font-size: 16px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .img {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
